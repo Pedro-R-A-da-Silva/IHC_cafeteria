@@ -1,0 +1,45 @@
+
+
+body {
+  margin: 4px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: green;
+}
+
+section {background-color: white;
+  margin: 4px;
+  padding: 10px;
+  border: 1px solid black;
+  flex-direction: row;
+}
+
+main {
+  margin: 10 5 5 10;}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  .item-lista {
+    flex: 1
+  }
+
+  .item-menor {
+    flex: 2
+  }
+
+  .item-maior {
+    flex: 3
+  }
+
+  .conteiner-geral{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .cabecalho{flex:1
+  }
+  .conteudo{flex:2}
+  .rodape{flex: 3}

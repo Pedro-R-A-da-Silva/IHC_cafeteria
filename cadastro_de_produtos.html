@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<!--head onde se encontra o titulo da pagina e os links de referencia-->
+<style>
+  main {
+    background-color: #FF4500;
+    padding: 1px 15px;
+  }
+
+  h1 {
+    font-family: serif;
+    ;
+    border: 2px solid black;
+    background-color: #8B4513;
+    padding: 1px 15px;
+  }
+
+  h3 {
+    font-family: serif;
+    ;
+    color: white;
+    padding: 2px
+  }
+
+  h2 {
+    border: 2px solid white;
+    background-color: black;
+    padding: 2px
+  }
+
+  footer {
+    color: white;
+    background-color: black;
+    padding: 2px
+  }
+  div{
+    font-family: serif;
+    color: white;
+  }
+
+  p {
+    color: #8B4513
+  }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>cadastro produto - +1cafe</title>
+
+  <!-- link relativo referencial ao Bootstrap - CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          +1cafe - cadastrar produto
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./repositorio_produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login_usuario.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrinho_usuario.html">Carrinho</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="my-3">
+
+      <!-- Grid -->
+
+      <!-- div contendo classe containaer para melhor estetizaçao usando CSS-->
+      <div class="container">
+        <!--classe modal fica por oculta na pagina ate qeu o usuario decida clicar no botao e fazer uso do seu conteudo-->
+        
+<!--NOTA DO ALUNO: PROFESSOR PARA UMA MELHOR ESTETICA DA PAGINA EU USEI O METODO "MODAL" PARA ADICONAR OS ITENS-->        
+
+        <!-- Button:adicionar -->
+        
+        <h5 class="modal-title">cadastro produto</h5>
+        <div class="modal-header"></div>
+              <div class="form-label">
+                  <form action="repositorio_produtos.html" method="POST">
+                    <!--nome-->
+                    <label for="sonho" class="form-label">produto</label>
+                    <input type="text" name="nome" id="sonho" class="form-control">
+                    <!--descricao-->
+                    <div class="form-group">
+                    <label for="descriçao" class="form-label">Descriçao</label>
+                    <input type="text" name="descriçao" id="descriçao" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted">descreva o seu objetivo.</small>
+                    </div>
+                    <!--preço-->
+                    <div class="form-group ">
+                    <label for="meta" class="form-label">valor</label>
+                    <input type="text" name="meta" id="meta" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted">como voce vai obter.</small>
+                    </div>
+                    <!--imagem-->
+                    <div class="form-group row">
+                      <label for="exampleFormControlFile1" class="form-label">imagem:</label>
+                      <input type="file" name="imagem" id="imagem" class="form-control-file" id="imagem">
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                      <button input type="reset"  class="btn btn-primary" value="Limpar">Limpar</button>
+                      <button type="submit" class="btn btn-warning" >cadastrar</button>        
+                    </div>
+                    
+                  </form>
+        </div>
+
+        <!-- Linha -->
+        <div id="itens-repositorio" class="row">
+
+          <!-- Colunas-->
+
+          <!-- beforeend -->
+        </div>
+
+    </section>
+
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>

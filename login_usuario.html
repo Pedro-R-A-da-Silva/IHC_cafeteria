@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!--head onde se encontra o titulo da pagina e os links de referencia-->
+<style>
+  main {
+    background-color: #FF4500;
+    padding: 1px 15px;
+  }
+
+  h1 {
+    font-family: serif;
+    ;
+    border: 2px solid black;
+    background-color: #8B4513;
+    padding: 1px 15px;
+  }
+
+  h3 {
+    font-family: serif;
+    ;
+    color: white;
+    padding: 2px
+  }
+
+  h2 {
+    border: 2px solid white;
+    background-color: black;
+    padding: 2px
+  }
+
+  footer {
+    color: white;
+    background-color: black;
+    padding: 2px
+  }
+  div{
+    font-family: serif;
+    color: white;
+  }
+
+  p {
+    color: #8B4513
+  }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>login - +1cafe</title>
+
+  <!-- link relativo referencial ao Bootstrap - CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login_usuario.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          +1cafe - Login
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./repositorio_produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login_usuario.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrinho_usuario.html">Carrinho</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cadastro_de_produtos.html">Cadastrar produto</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        </header>
+
+        <main>
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                  <!-- Tabs Titles -->
+              
+                  <!-- Icon -->
+                  <div class="fadeIn first">
+                    <img src="" id="icon" alt="User Icon" />
+                  </div>
+              
+                  <!-- Login Form -->
+                  <form>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+                  </form>
+              
+                  <!-- Remind Passowrd -->
+                  <div id="formFooter">
+                    <a class="underlineHover" href="#">esqueceu a senha?</a>
+                  </div>
+              
+                </div>
+              </div>
+        <!--refrencia do script: https://bootsnipp.com/snippets/dldxB-->
+        </main>
+    </body>
+
+    <footer></footer>
+</html>
